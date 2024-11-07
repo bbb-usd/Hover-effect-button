@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  background: var(--white);
+}
+
+:root {
+  --blue: rgba(29, 29, 249, 0.878);
+  --black: rgba(0, 0, 0, 0.903);
+  --white: rgba(255, 255, 255, 0.916);
+  --red: rgba(255, 0, 0, 0.923);
+}
+
+.first-container {
+  padding: 30px;
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: var(--black);
+}
+.second-container {
+  padding: 30px;
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: var(--blue);
+}
+.third-container {
+  padding: 30px;
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: var(--white);
+}
+
+.first-button {
+  padding: 20px 50px;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--blue);
+  background: var(--black);
+  border-radius: 10px;
+  border: 2px solid var(--blue);
+  box-shadow: 0 0 10px var(--blue), 0 0 20px var(--blue), 0 0 40px var(--blue),
+    0 0 60px var(--blue);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.first-button:hover {
+  color: var(--black);
+  background: var(--blue);
+}
+.first-button:active {
+  color: var(--blue);
+  background: transparent;
+}
+.second-button {
+  padding: 20px 50px;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--white);
+  background: var(--black);
+  border-radius: 10px;
+  border: 2px solid var(--white);
+  box-shadow: 0 0 10px var(--white);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.second-button:hover {
+  color: var(--blue);
+  background: var(--white);
+}
+.second-button:active {
+    color: var(--white);
+  background: transparent;
+}
+.third-button {
+  padding: 20px 50px;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--red);
+  background: var(--black);
+  border-radius: 10px;
+  border: 2px solid var(--red);
+  box-shadow: 0 0 10px var(--red);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.third-button:hover {
+  color: var(--white);
+  background: var(--red);
+}
+.third-button:active {
+  color: var(--red);
+  background: transparent;
+}
